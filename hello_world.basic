@@ -1,0 +1,12 @@
+0 rem !to "build/joystick-one.prg"
+10 j=peek(56320)
+25 if j=119 then print "right"
+30 if j=125 then print "down"
+35 if j=117 then print "diag right down"
+40 if j=123 then print "left"
+45 if j=118 then print "diag right up"
+50 if j=121 then print "diag left down"
+55 if j=122 then print "diag left up"
+65 if j=126 then print "up"
+70 if j=111 then print "fire"
+80 goto 10
