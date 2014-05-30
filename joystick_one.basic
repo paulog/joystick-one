@@ -1,0 +1,14 @@
+0 rem !to "build/joystick-one.prg"
+10 rem read joystick #2
+20 j=peek(56320)
+30 rem output the direction
+40 if j=119 then print "right"
+45 if j=125 then print "down"
+50 if j=117 then print "diag right down"
+55 if j=123 then print "left"
+60 if j=118 then print "diag right up"
+65 if j=121 then print "diag left down"
+70 if j=122 then print "diag left up"
+75 if j=126 then print "up"
+80 if j=111 then print "fire"
+85 goto 20
